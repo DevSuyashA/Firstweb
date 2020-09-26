@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Places</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        .container {
+            border: 1px solid black;
+        }
+
+        .boxes {
+            padding: 10px;
+            width: 410px;
+            background-color: red;
+            margin: 20px;
+            height: 200px;
+            border: 2px solid blue;
+            position: relative;
+            float: left;
+            /* margin-left: 20px;
+            margin-right: 20px; */
+        }
+
+        .minibox {
+            position: absolute;
+
+            color: white;
+            right: 0px;
+            top: 0px;
+            background-color: black;
+            text-align: center;
+            padding: 8px;
+            width: 35%;
+            height: 20%;
+            border-bottom: 2px solid blue;
+            border-left: 2px solid blue;
+            /* float: right; */
+        }
+
+        @media (min-width: 1200px) {
+            .innerBox {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1199px) {
+              .boxes  {
+                  width: unset;
+                  display: block;
+              }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Favourite Places</h1>
+    <div class="container">
+        <div class="boxes">
+            <div class="innerBox" id="box1">
+                <div class="minibox"></div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="innerBox" id="box2">
+                <div class="minibox"></div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="innerBox" id="box3">
+                <div class="minibox"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
